@@ -3,7 +3,6 @@ This guide covers an array of formatting related issues with SAS / SATA hard dis
 
 # Should I boot from disk?
 Largely speaking all instructions here should perform reasonably well in all linux environments. Some systems though such as TrueNas do not allow the installation of additional packages needed to fix your issues effectively. For that reason I would consider to boot from an iso to avoid any issues. For the purpose of reformating disks  [SystemRescue (formerly known as SystemRescueCd)](https://www.system-rescue.org/) is a good choice.
-
 * it is lightweight;
 * it comes with support for most sas / raid controllers;
 * it comes with support for plenty of network cards;
@@ -20,4 +19,4 @@ Largely speaking all instructions here should perform reasonably well in all lin
    
 # Sources
 * [Reformating 520k Drives](https://forum.level1techs.com/t/how-to-reformat-520-byte-drives-to-512-bytes-usually/133021), Level 1 Techs Forum, 2018
-* [Troubleshooting Disk Format Warnings in TrueNas Scale, Truenas Forum, constantly updated](https://www.truenas.com/community/threads/troubleshooting-disk-format-warnings-in-truenas-scale.106051/) 
+* [Troubleshooting Disk Format Warnings in TrueNas Scale](https://www.truenas.com/community/threads/troubleshooting-disk-format-warnings-in-truenas-scale.106051/), Truenas Forum, constantly updated

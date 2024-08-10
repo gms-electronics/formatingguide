@@ -1,1 +1,34 @@
+Feature Request
+The formatting of multiple (especially large) me0chanical drives (spinning rust) requieres significant amount of time.
+Adding the parallel package would allow to accelerate the process in case large amounts of mechanical drives need to be restored to factory default to recover them or be wiped after recovery.
+
+Background
+sg_utils is a collection of tools already included in this distro. One of the more used tools of sg3_utils is sg_format allowing to:
+
+
+        
+      Quick Formatting of disks
+
+        
+      Restore disk functionality in case of corrupted sectors using deep formating
+
+        
+      Changing block size of disks.
+
+While the process takes little to no time on solid state disks, disks using mechanical technology ("spinning rust") can take significant amount of time.
+sg3_utils was written in a period of time when even server resources where significantly limited even for general purpose workloads (such as formating a drive), with today's compute power considering multi core architectures even the load of refomatting 20 drives poses no challenge any more.
+The use of parallel would allow to significantly accelerate such a process by piping several formatting jobs in parallel.
+
+Application Example
+An array of disks failed and a(n) (un-)succesful attempt was made to recover the information contained. Given that the integrity of one or more disks is doubted, the disks are to be decommissioned. For the purpose of decommissioning the disks a wipe shall be done to destroy all information contained on the disk.
+One approach would be the individual formatting of all disks desired to be removed:
+sg_format -f --format --size=512 <device> --quick
+In case of one disk that is a feasible approach. In case of more than one disk it's requiered to login repeatedly to check the progress and start the second or Nth to format the desired quantity of disks. Given that a single disk format takes roughly 1-2 hours per terrabyte this process can become extremely lengthy and requiere several log-ins.
+Adding the parallel package would allow to run several formatting processes in parallel using one command:
+for i in {1..28}; do echo "sg_format --format --size=512 /dev/sg$i"; done | parallel -j40
+The same command would work also with systems using a drive letter system:
+for i in {a..z}; do echo "sg_format --format --size=512 /dev/sg$i"; done | parallel -j40
+Given that the nomenclation of the drives is not always sequential, for i in can be adapted to that use case:
+If I want to format drives /dev/sga to /dev/sgc and the drives /dev/sge/ to /dev/sgf/ the command could look like this:
+for i in {{a..c},{e..f}}; do echo "sg_format --format --size=512 /dev/sg$i"; done | parallel -j40
 

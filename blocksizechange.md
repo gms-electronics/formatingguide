@@ -12,7 +12,13 @@ After installing a hard disk drive, the disk is not recognized by the system des
 
 ## Strategy to reformat the block size of a physical disk for one drive
 
-### Requierements
+### Hardware Requirements
+
+:exclamation: Only use HBA / PCI Mode controllers that allow to loop through all information of the disk and all data streams directly to the operating system. 
+Don't use under any circumstance Raid Controllers to perform these operations. 
+You can find more information about HBA and Raid Controllers [here](https://www.servethehome.com/buyers-guides/top-hardware-components-for-truenas-freenas-nas-servers/top-picks-truenas-freenas-hbas/)
+
+### Software Requierements
 * [sg3_utils]([url](https://sg.danny.cz/sg/sg3_utils.html))
 
 ### Instructions

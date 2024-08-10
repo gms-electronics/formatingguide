@@ -10,7 +10,7 @@ This section covers issues related to formats that are not
 
 # Remove Disk Protection 
 This section covers issues related to formats that are not
-* Reformating 3Par San Disk Drives
+* Reformating SAS Drives to remove protection bits
 
 # Sources
 * [Reformating 520k Drives]([url](https://forum.level1techs.com/t/how-to-reformat-520-byte-drives-to-512-bytes-usually/133021)), Level 1 Techs Forum, 2018

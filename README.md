@@ -10,7 +10,7 @@ Largely speaking all instructions here should perform reasonably well in all lin
 
 # How do I start?
 1. Download the iso from the Systemrescue website
-2. If you need to handle multiple disks run 'pacman -S parallel'
+2. If you need to handle multiple disks run `pacman -S parallel`
 3. Follow the instructions you can find below.
 
 # Contained Guides

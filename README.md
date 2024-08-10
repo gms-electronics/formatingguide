@@ -9,5 +9,5 @@ This guide covers an array of formatting related issues with SAS / SATA hard dis
 
 # Sources
 * [Reformating 520k Drives]([url](https://forum.level1techs.com/t/how-to-reformat-520-byte-drives-to-512-bytes-usually/133021), Level 1 Techs Forum, 2018
-* [Troubleshooting Disk Format Warnings in TrueNas Scale, Truenas Forum, constantly updated](url) 
+* [Troubleshooting Disk Format Warnings in TrueNas Scale, Truenas Forum, constantly updated](https://www.truenas.com/community/threads/troubleshooting-disk-format-warnings-in-truenas-scale.106051/) 
 * 

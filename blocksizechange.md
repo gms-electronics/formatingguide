@@ -1,6 +1,7 @@
 # Symptoms and Issue
 After installing a hard disk drive, the disk is not recognized by the system despite the disk being functional and correctly seated. 
 
+# Warnings
 :exclamation: This guide is solely for SAS or SCSI disks and does not apply to SATA disks. 
 
 :exclamation: An interuption of the process can destroy your disk, assure correct functioning of all other components, stable energy supply and.

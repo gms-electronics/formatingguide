@@ -12,6 +12,12 @@ You can identify disks by running `sg_format <device>` looking for `PROTECT=1` o
 
 :exclamation: Study the drives you want to reformat carefully to avoid data loss by formatting the wrong drive.
 
+### Hardware Requirements
+
+:exclamation: Only use HBA / PCI Mode controllers that allow to loop through all information of the disk and all data streams directly to the operating system. 
+Don't use under any circumstance Raid Controllers to perform these operations. 
+You can find more information about HBA and Raid Controllers [here](https://www.servethehome.com/buyers-guides/top-hardware-components-for-truenas-freenas-nas-servers/top-picks-truenas-freenas-hbas/)
+
 ## Strategy to reformat the block size of a physical disk for one drive
 
 ### Requierements

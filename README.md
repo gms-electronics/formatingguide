@@ -10,8 +10,10 @@ Largely speaking all instructions here should perform reasonably well in all lin
 
 # How do I start?
 1. Download the iso from the Systemrescue website
-2. If you need to handle multiple disks run `pacman -S parallel`
-3. Follow the instructions you can find below.
+2. run `pacman -Sy` to update the package manager
+3. If you need to handle multiple disks run `pacman -S parallel`
+4. If you want to access via ssh run `passwd` to set a password of your choice and enable the correct port for SSH (22) on the firewall that comes factory installed (iptables as of writing)
+5. Follow the instructions you can find below in the guides.
 
 # Contained Guides
 1. [Change Block size from 3Par or EMC Storrage solution disks from 520 to 512 / 4096 bytes](https://github.com/gms-electronics/formatingguide/blob/main/blocksizechange.md)

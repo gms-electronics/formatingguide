@@ -24,7 +24,7 @@ Largely speaking all instructions here should perform reasonably well in all lin
 * [ShredOS](https://github.com/PartialVolume/shredos.x86_64/)
 
 # Attributions
-* Special thanks got to @PartialVolume and his tool [ShredOS](https://github.com/PartialVolume/shredos.x86_64/) has been immensely helpful for disk sanitization for quiet some time now and is the Open Source reference
-* TrueNas Community Member [Daisuke](https://www.truenas.com/community/members/daisuke.1017/) for giving the most dettailed description and solution approach
-* Wendell Wilson from Level 1 Tech who was the first one describing the problem and the solution
+* Special thanks got to @PartialVolume and his tool [ShredOS](https://github.com/PartialVolume/shredos.x86_64/). It has been immensely helpful for disk sanitization for quiet some time now and is the Open Source reference in that field;
+* TrueNas Community Member [Daisuke](https://www.truenas.com/community/members/daisuke.1017/) for giving the most dettailed description and solution approach;
+* Wendell Wilson from Level 1 Tech who was the first one describing the problem and the solution.
 
